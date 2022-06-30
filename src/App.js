@@ -16,17 +16,17 @@ function App() {
       <Switch active={isMonthly} onChange={toggleType} />
 
       <div className="cards-container">
-        <Card name="Basic" price={isMonthly ? 19.99 : 199.99} index={1}>
+        <Card name="Basic" price={isMonthly ? 19.99 : 199.99} isMonthly={isMonthly} index={1}>
           <li>500 GB Storage</li>
           <li> 2 Users Allowed</li>
           <li> Send up to 3 GB</li>
         </Card>
-        <Card name="Professional" price={isMonthly ? 24.99 : 249.99} index={2}>
+        <Card name="Professional" price={isMonthly ? 24.99 : 249.99} isMonthly={isMonthly} index={2}>
           <li>1 TB Storage</li>
           <li>5 Users Allowed</li>
           <li>Send up to 10 GB</li>
         </Card>
-        <Card name="Master" price={isMonthly ? 39.99 : 399.99} index={3}>
+        <Card name="Master" price={isMonthly ? 39.99 : 399.99} isMonthly={isMonthly} index={3}>
           <li>2 TB Storage</li>
           <li>10 Users Allowed 1</li>
           <li>Send up to 20 GB</li>

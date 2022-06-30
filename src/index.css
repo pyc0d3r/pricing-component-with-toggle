@@ -185,6 +185,42 @@ button:hover {
   color: rgb(161, 172, 227);
 }
 
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse-reverse {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.card-price-annual {
+  animation: pulse 1s forwards;
+}
+
+.card-price-monthly {
+  animation: pulse-reverse 1s backwards;
+}
+
 .attribution {
   padding-top: 6.3rem;
   font-size: 11px;

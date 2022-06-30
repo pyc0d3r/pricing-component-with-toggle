@@ -1,29 +1,15 @@
 * {
   font-family: 'Montserrat', sans-serif;
+  padding: 0;
+  margin: 0;
   /*width: 1440px;*/
   /*font-size: 15px;*/
 }
 
-.images {
-  display: flex;
-  align-items: flex-end;
-  position: absolute;
-  height: 68.75rem;
-  z-index: -100;
-}
-
-.images img {
-  z-index: -100;
-}
-
-.img-1 {
-  width: 30%;
-  padding-bottom: 12.5rem;
-}
-
-.img-2 {
-  padding-left: 25rem;
-  padding-bottom: 18.75rem;
+.container {
+  background-image: url(images/bg-bottom.svg), url(images/bg-top.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 100%, 100% 0;
 }
 
 .title {
@@ -73,11 +59,11 @@ h1 {
   right: 0;
   bottom: 0;
   background-color: rgb(161, 172, 227);
-  background: linear-gradient(300deg, rgb(126, 104, 234) 50%, rgb(231, 233, 245) 100%);
-
+  background: linear-gradient(hsl(236, 72%, 79%) to hsl(237, 63%, 64%));
   -webkit-transition: .4s;
   transition: .4s;
 }
+
 .slider:before {
   position: absolute;
   content: "";
@@ -93,7 +79,6 @@ h1 {
 input:checked+.slider {
   background-color: #2196F3;
 }
-
 
 input:focus+.slider {
   box-shadow: 0 0 1px #2196F3;
@@ -134,6 +119,7 @@ li {
   border-bottom: none;
   line-height: 1.8rem;
   border-color: hsl(234, 14%, 74%);
+  margin-inline: 1rem;
 }
 
 h2 {
@@ -156,7 +142,7 @@ h2 {
 }
 
 .card:hover {
-  box-shadow: 0 10px 30px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.2);
 }
 
 .card.card-2 {
@@ -164,7 +150,7 @@ h2 {
   background-color: rgb(161, 172, 227);
   color: white;
   height: 34.37rem;
-  background: linear-gradient(300deg, rgb(126, 104, 234) 50%, rgb(231, 233, 245) 100%);
+  background: linear-gradient(hsl(236, 72%, 79%) to hsl(237, 63%, 64%));
 }
 
 .card-2 li {
@@ -191,7 +177,7 @@ button:hover {
 
 .one {
   background-color: rgb(161, 172, 227);
-  background: linear-gradient(300deg, rgb(126, 104, 234) 50%, rgb(231, 233, 245) 100%);
+  background: linear-gradient(hsl(236, 72%, 79%) to hsl(237, 63%, 64%));
   color: white;
 }
 
@@ -204,4 +190,10 @@ button:hover {
   padding-top: 6.3rem;
   text-align: right;
   padding-right: 0.6rem;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }

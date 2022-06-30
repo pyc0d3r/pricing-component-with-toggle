@@ -5,7 +5,7 @@
 }
 
 .container {
-  background-image: url(images/bg-bottom.svg), url(images/bg-top.svg);
+  background-image: url(./images/bg-bottom.svg), url(./images/bg-top.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: 0 100%, 100% 0;
 }
@@ -174,13 +174,13 @@ button:hover {
   cursor: pointer;
 }
 
-.one {
+.card button {
   background-color: rgb(161, 172, 227);
   background: linear-gradient(hsl(236, 72%, 79%) to hsl(237, 63%, 64%));
   color: white;
 }
 
-.two {
+.card-2 button {
   background-color: white;
   color: rgb(161, 172, 227);
 }

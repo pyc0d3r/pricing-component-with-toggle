@@ -2,7 +2,7 @@ function Switch({ active, onChange }) {
   return (
     <div className="toggle">
       <label className="switch">
-        <div className="con">
+        <div className="section">
           <span>Annually</span>
           <input type="checkbox" checked={active} onChange={onChange} />
           <span className="slider round"></span>

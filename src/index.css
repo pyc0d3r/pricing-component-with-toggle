@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-* {
+body {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -45,15 +45,12 @@ h1 {
   height: 0;
 }
 
-.con {
+.section {
   display: flex;
   justify-content: center;
   gap: 3.8rem;
   padding-top: 0.6rem;
-}
-
-.con {
-  color: hsl(234, 14%, 74%)
+  color: hsl(234, 14%, 74%);
 }
 
 .slider {
@@ -95,7 +92,6 @@ input:checked+.slider:before {
   transform: translateX(26px);
 }
 
-/* Rounded sliders */
 .slider.round {
   border-radius: 2.1rem;
 }
@@ -125,6 +121,11 @@ li {
   line-height: 1.8rem;
   border-color: hsl(234, 14%, 74%);
   margin-inline: 1rem;
+}
+
+li:last-child {
+  border-bottom: 1px solid;
+  border-color: hsl(234, 14%, 74%);
 }
 
 h2 {

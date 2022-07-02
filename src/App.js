@@ -4,7 +4,7 @@ import Card from './components/Card';
 import { useState } from 'react';
 
 function App() {
-  const [isMonthly, setMonthly] = useState(true);
+  const [isMonthly, setMonthly] = useState(false);
 
   function toggleType() {
     return setMonthly(!isMonthly);
@@ -33,7 +33,7 @@ function App() {
         <Card name="Master" price={isMonthly ? 39.99 : 399.99} isMonthly={isMonthly} index={3}>
           <ul>
             <li>2 TB Storage</li>
-            <li>10 Users Allowed 1</li>
+            <li>10 Users Allowed</li>
             <li>Send up to 20 GB</li>
           </ul>
         </Card>

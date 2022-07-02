@@ -115,17 +115,13 @@ li {
   list-style: none;
   padding: 1.1rem;
   font-size: 0.8rem;
-  border: 1px solid;
-  border-inline: none;
-  border-bottom: none;
+  border-top: 1px solid hsl(234, 14%, 74%);
   line-height: 1.8rem;
-  border-color: hsl(234, 14%, 74%);
   margin-inline: 1rem;
 }
 
 li:last-child {
-  border-bottom: 1px solid;
-  border-color: hsl(234, 14%, 74%);
+  border-bottom: 1px solid hsl(234, 14%, 74%);
 }
 
 h2 {

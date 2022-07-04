@@ -103,12 +103,17 @@ input:checked+.slider:before {
 .cards-container {
   display: flex;
   justify-content: space-between;
-  padding: 0 3rem;
+  padding: 0 10rem;
 }
 
 h3 {
-  font-size: 3.1rem;
-  margin: 2.5rem;
+  font-size: 4rem;
+  margin: 2rem 0;
+}
+
+.dollar-sign {
+  font-size: 2rem;
+  padding: 0.5rem;
 }
 
 li {
@@ -133,7 +138,7 @@ h2 {
   z-index: 1000;
   text-align: center;
   border-radius: 0.6rem;
-  width: 31.25rem;
+  width: 20.25rem;
   height: 31.25rem;
   padding-inline: 1.25rem;
   background-color: white;
@@ -189,19 +194,19 @@ button:hover {
 }
 
 .card-2 button:hover {
-  background: linear-gradient(130deg,hsl(236, 72%, 79%), hsl(237, 63%, 64%)70%);
+  background: linear-gradient(130deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%)70%);
   color: white;
   border-color: white;
 }
 
 .card button {
-  background: linear-gradient(130deg,hsl(236, 72%, 79%), hsl(237, 63%, 64%)70%);
+  background: linear-gradient(130deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%)70%);
   color: white;
 }
 
 .card-2 button {
   background: white;
-  color:hsl(232, 13%, 33%);
+  color: hsl(232, 13%, 33%);
 }
 
 @keyframes pulse {
@@ -230,6 +235,13 @@ button:hover {
   100% {
     opacity: 1;
   }
+}
+
+.card-price-annual,
+.card-price-monthly {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-price-annual {
